@@ -14,8 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@500;700&display=swap" rel="stylesheet" />
     <title>Emberfall</title>
-    <script type="module" crossorigin src="./assets/index-BYP7PQgL.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-UPwkSnKs.css">
+    <script type="module" crossorigin src="./assets/index-5vRqHRyZ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-uq5iQuPY.css">
   </head>
   <body>
     <div id="app">
@@ -241,6 +241,20 @@
               <span class="cs-role">Ranged · Mana · Pet</span>
               <span class="cs-blurb">Shoots from afar with a crossbow while a loyal wolf holds the enemy's attention. Stings, slows and leaps away.</span>
             </button>
+          </div>
+          <div id="cs-look" class="cs-look hidden">
+            <canvas id="cs-preview" width="240" height="300"></canvas>
+            <div class="cs-look-opts">
+              <div class="cs-label">Race</div>
+              <div class="cs-chips" id="cs-races">
+                <button class="cs-chip" data-race="human">🧑 Human</button><button class="cs-chip" data-race="elf">🧝 Elf</button><button class="cs-chip" data-race="dwarf">🧔 Dwarf</button><button class="cs-chip" data-race="gnome">🧙 Gnome</button>
+              </div>
+              <div class="cs-race-info" id="cs-race-info"></div>
+              <div class="cs-label">Gender</div>
+              <div class="cs-chips" id="cs-genders">
+                <button class="cs-chip" data-gender="male">♂ Male</button><button class="cs-chip" data-gender="female">♀ Female</button>
+              </div>
+            </div>
           </div>
           <label class="cs-label" for="cs-name">Name</label>
           <input id="cs-name" maxlength="16" value="Hero" autocomplete="off" autocorrect="off" spellcheck="false" />
