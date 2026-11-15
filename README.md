@@ -2,7 +2,7 @@
 
 A small fantasy action RPG that runs in the browser.
 
-**Play: https://mortenjor.github.io/emberfall/**
+**Play: https://mortenjor.github.io/kaldra/**
 
 Works best in Chrome, Safari or Edge on a computer or iPad (landscape). Progress is saved in your
 browser.
