@@ -1,4 +1,4 @@
-# Emberfall
+# Kaldra: The Sundered Sea
 
 A small fantasy action RPG that runs in the browser.
 
