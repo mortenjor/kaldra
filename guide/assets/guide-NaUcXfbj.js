@@ -135,7 +135,7 @@
       <h2>On foot</h2>
       <p>Every border between zones is open: walk across it anywhere and the next zone loads around you. If the zone ahead is more than two levels above you, you get a warning first. Water deeper than about a metre is <b>swum</b> at 30% speed (you get off your mount); lava can't be crossed. Jump with Space or the jump button to get onto rocks and walls.</p>
       <h2>Flight masters</h2>
-      <p>Every town has a Dragon Master (✈ on the maps). Talk to one to <b>discover</b> that flight point; from any flight master you can then fly to every point you know, on the bronze Wind Dragon. Routes go town to town over the passes, also through towns you haven't found yet. Flights cost ${wa(15)} plus about ${wa(12)} per 100 m and go ${sf} m/s. Nothing can hurt you while you fly, and you can skip to the end.</p>
+      <p>Every town has a Dragon Master (✈ on the maps). Until you've talked to one it has a <b style="color:#5aaeff">blue !</b> over its head (quest givers' is gold). Talk to it to <b>discover</b> that flight point; from any flight master you can then fly to every point you know, on the bronze Wind Dragon. Routes go town to town over the passes, also through towns you haven't found yet. Flights cost ${wa(15)} plus about ${wa(12)} per 100 m and go ${sf} m/s. Nothing can hurt you while you fly, and you can skip to the end.</p>
       <p>Heroes in the other side's lands use the flight master in their own side's guest camp instead of the town's.</p>
       <div class="cols"><div>${["ember","kaldra"].map(e=>`<h3>${Bs[e].name}</h3>${ot([{label:"Flight point"},{label:"Zone"},{label:"Flight master"}],a(e).map(t=>({cells:[W(t.town),Me(t.id),Kt(t.npc)],keys:[t.town,Pe.get(t.id).name,ft.get(t.npc)?.name??""]})))}`).join("")}</div><div></div></div>
       <h2>Ships</h2>
@@ -145,7 +145,7 @@
       ${ot([{label:"Camp"},{label:"Side"},{label:"Zone"},{label:"Levels",num:!0},{label:"People"}],Hs.map(e=>({cells:[W(e.name),kn(e.side),Me(e.map),`${e.levels[0]}–${e.levels[1]}`,[e.giver,e.vendor,e.flier,e.trainer].filter(Boolean).map(t=>Kt(t.id)).join(", ")],keys:[e.name,e.side,e.map,e.levels[0],""]})))}
       <p class="dim small">Guest flight points: ${Object.entries(gd).map(([e,t])=>`${W(t.town)} (${Me(e)})`).join(", ")}.</p>
       <h2>Mounts</h2><p>See <a href="#/mounts">Mounts and riding</a>.</p>`}},bf=()=>{const a=[...ft.values()].filter(r=>r.stable),e=r=>Sh[r-1].name,t=Object.values(cl).filter(r=>!r.taxi);return{title:"Mounts and riding",html:`<h1>Mounts and riding</h1>
-      <p class="lead">Learn to ride at a stable master, then summon your mount from the action bar (1.5 s; getting off is instant). You can't mount in combat or in dungeons, and fighting, talking or using things gets you off.</p>
+      <p class="lead">Learn to ride at a stable master, then summon your mount from the action bar (1.5 s; getting off is instant). You can't mount in combat or in dungeons, and fighting or using things gets you off (talking to people doesn't).</p>
       <h2>Training</h2>
       ${ot([{label:"Skill"},{label:"Level",num:!0},{label:"Price",num:!0},{label:"Speed"},{label:"Extra mounts",num:!0}],Sh.map(r=>({cells:[W(r.name),String(r.level),wa(r.price),r.tier===3?`Flying, ${Fp}× run speed`:`+${Math.round((r.speed-1)*100)}%`,wa(Dp[r.tier])]})))}
       <p>Each training gives you one mount of that kind for free. Taught by ${a.map(r=>`${Kt(r)} (${Me(r.map)})`).join(", ")}.</p>
