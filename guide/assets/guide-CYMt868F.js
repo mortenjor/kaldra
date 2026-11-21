@@ -76,6 +76,7 @@ ${tp}`)},e.customProgramCacheKey=()=>"lit-windows",Eh.set(a,e),e)}new ya({color:
       </ul></div><div>
       <h3>Keyboard and mouse</h3><ul>
         <li>WASD or the arrow keys to move, drag with the mouse to turn, mouse wheel to zoom.</li>
+        <li>The key left of 1 starts and stops auto-run; press forward or back to stop too. You can choose another key in the menu (Menu → Auto-run key).</li>
         <li>Tab switches between nearby enemies; 1–0, - and = use the bar; F interacts; Space jumps (X goes down while flying).</li>
         <li>B, C or I: bags and character · N or T: talents · K or P: professions · M: world map · Esc: clears your target, closes windows.</li>
       </ul></div></div>
