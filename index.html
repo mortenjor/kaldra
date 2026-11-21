@@ -14,8 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@500;700&display=swap" rel="stylesheet" />
     <title>Kaldra: The Sundered Sea</title>
-    <script type="module" crossorigin src="./assets/index-BzBUThCa.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BSNw9liK.css">
+    <script type="module" crossorigin src="./assets/index-BbQghR7a.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CJXWKDCN.css">
   </head>
   <body>
     <div id="app">
@@ -113,8 +113,18 @@
           <h2>Menu</h2>
           <h3>Controls</h3>
           <p class="small">Left side: drag to move · Right side: drag to look, pinch to zoom, tap an enemy to target it · Buttons: use abilities · Tap your portrait or 🎒 for your character, gear and bags · 🗺️ or tap the minimap for the world map · ⭐ for talents. Jump button or Space: jump over crates, sacks and fences. Keyboard: WASD, mouse drag, 1–9, 0, - and = for the action bar, Tab, C or B for character, M for map, N for talents. The key left of 1 toggles auto-run (change it below).</p>
-          <div class="dlg-buttons"><button id="menu-difficulty" class="btn">Difficulty: Normal</button><button id="menu-sound" class="btn">Sound: On</button><button id="menu-graphics" class="btn">Graphics: Auto</button><button id="menu-daynight" class="btn">Day &amp; night: On</button><button id="menu-weather" class="btn">Weather: On</button><button id="menu-fps" class="btn">FPS: Off</button><button id="menu-autorun" class="btn">Auto-run key</button><button id="menu-fullscreen" class="btn">Fullscreen</button><button id="menu-coop" class="btn">Play together</button><button id="menu-guide" class="btn">📖 Guide</button><button id="menu-switch" class="btn">Switch character</button><button id="menu-close" class="btn gold">Resume</button></div>
+          <div class="dlg-buttons"><button id="menu-difficulty" class="btn">Difficulty: Normal</button><button id="menu-sound" class="btn">Sound: On</button><button id="menu-graphics" class="btn">Graphics: Auto</button><button id="menu-ultra" class="btn">Ultra options…</button><button id="menu-fps" class="btn">FPS: Off</button><button id="menu-autorun" class="btn">Auto-run key</button><button id="menu-fullscreen" class="btn">Fullscreen</button><button id="menu-coop" class="btn">Play together</button><button id="menu-guide" class="btn">📖 Guide</button><button id="menu-switch" class="btn">Switch character</button><button id="menu-close" class="btn gold">Resume</button></div>
           <p class="small" style="margin-top:10px">Your progress saves automatically on this device.</p>
+        </div>
+      </div>
+
+      <!-- Ultra options -->
+      <div id="ultra-opts" class="hidden">
+        <div class="panel uo-panel">
+          <div class="inv-head"><h2>Ultra options</h2><button id="uo-close" class="round-btn" aria-label="Close">✕</button></div>
+          <p class="small">Switch the parts of Ultra on or off. Turning some off makes the game faster on slower computers.</p>
+          <div id="uo-list"></div>
+          <div class="dlg-buttons"><button id="uo-all" class="btn">All on</button><button id="uo-none" class="btn">All off</button><button id="uo-done" class="btn gold">Done</button></div>
         </div>
       </div>
 
